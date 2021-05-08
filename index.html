@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>random key</title>
+    <style media="screen">
+      #display {
+        padding: 1em;
+        text-align: center;
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="display"></div>
+  </body>
+</html>
+<script type="text/javascript">
+const keys = ["G", "A♭", "A", "B♭", "B", "C", "D♭", "D", "E♭", "E", "F", "F♯/G♭"];
+const majorMinor = ["major", "minor"];
+document.getElementById("display").innerHTML = keys[Math.floor(Math.random() * 12)] + " " + majorMinor[Math.floor(Math.random() * 2)];
+</script>
